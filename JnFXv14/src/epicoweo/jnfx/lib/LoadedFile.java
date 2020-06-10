@@ -1,6 +1,7 @@
 package epicoweo.jnfx.lib;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileNotFoundException;
 
 public class LoadedFile extends File {
     

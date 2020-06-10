@@ -1,6 +1,7 @@
 package epicoweo.jnfx.lib;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.HashMap;
 
 public class JnFX {
@@ -43,7 +44,7 @@ public class JnFX {
     }
 
     public void renameFile(File file, String name) {
-        String filenameArr[] = file.getAbsolutePath().split("[\\|/]");
+        String filenameArr[] = file.getAbsolutePath().split("(\\.+)$");
         File dest = new File(file.getAbsolutePath().substring(filenameArr[filenameArr.length-1].length()) + name);
         file.renameTo(dest);
     }
