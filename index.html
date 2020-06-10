@@ -1,0 +1,94 @@
+
+
+<DOCTYPE html>
+<html>
+    <head>
+        <title>JnFX Documentation</title>
+        <meta charset="utf-8">
+		<style>
+			.class {
+				text-indent: 20px;
+			}
+			.classdesc {
+				text-indent: 40px;
+			}
+			.classhead {
+				text-indent: 40px;
+			}
+			.code {
+				font-family: monospace;
+				text-indent: 60px;
+			}
+			.desc {
+				text-indent: 80px;
+			}
+		</style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>JnFX Docs</h1>
+            <h5>by EpicOweo, nFX by NaomixNemo</h5>
+            <br>
+            <div class="contents">
+                <h2>Table of Contents</h2>
+                <ul>
+                    <li>
+                        <a href="#classes">Classes</a>
+                        <ul>
+                            <li>
+                                <a href="#lib">epicoweo.jnfx.lib</a>
+                                <ul>
+                                    <li><a href="#jnfx">JnFX</a></li>
+                                    <li><a href="#loadedfile">LoadedFile</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="classes">
+                <h2 id="classes">Classes</h2>
+                <div id="lib">
+                    <h3 class="class" id="jnfx">epicoweo.jnfx.lib.JnFX</h3>
+                    <p class="classdesc">The main class for JnFX, implementing any of the library's code requires an instance of this class</p>
+                    <h4 class="classhead">Constructor</h4>
+						<p class="code">public JnFX()</code>
+					<h4 class="classhead">Globals</h4>
+						<p class="code">public HashMap<String, LoadedFile> loadedFiles</code>
+							<p class="desc">A HashMap containing each LoadedFile created by JnFX.</p>
+                    <h4 class="classhead">Methods</h4>
+						<p class="code">public void createFile(String path)</code>
+							<p class="desc">Creates a directory at the given path.</p>
+						<p class="code">public void createFile(String path, boolean loadFile, String name) throws FileNotFoundException</code>
+							<p class="desc">Creates a directory at the given path. If loadFile is true, then it additionally loads the file with JnFX using <code>JnFX.loadFile(name)</code>.</p>
+						<p class="code">public void deleteFile(File file) throws FileNotFoundException</code>
+							<p class="desc">Deletes a given file or directory.</p>
+						<p class="code">public LoadedFile getFile(String name)</code>
+							<p class="desc">Returns the LoadedFile object from the <code>loadedFiles</code> HashMap with the given name.</p>
+						<p class="code">public void renameFile(File file, String name)</code>
+							<p class="desc">Renames the given file with to the given name.</p>
+                    <h3 class="class" id="loadedfile">epicoweo.jnfx.lib.LoadedFile extends File</h3>
+                    <h4 class="classhead">Constructor</h4>
+						<p class="code">public LoadedFile(String name, String path) throws FileNotFoundException</code>
+					<h4 class="classhead">Globals</h4>
+						<p class="code">private static final long serialVersionUID = 1L</code>
+							<p class="desc">Serial version UID.</p>
+						<p class="code">private final String path</code>
+							<p class="desc">The path of the file.</p>
+						<p class="code">private final String name</code>
+							<p class="desc">The name of the file in the JnFX.loadedFiles HashMap.</p>
+						<p class="code">private final boolean isEmpty</code>
+							<p class="desc">True if the directory is empty.</p>
+					<h4 class="classhead">Methods</h4>
+						<p class="code">public String getPath()</code>
+							<p class="desc">Returns this.path.</p>
+						<p class="code">public String getName()</code>
+							<p class="desc">Returns this.name.</p>
+						<p class="code">public boolean isEmpty()</code>
+							<p class="desc">Returns this.isEmpty.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
