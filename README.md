@@ -3,7 +3,7 @@ Naomi's File Explorer (nFX) adapted into Java 8 and 14.
 Find the original nFX (developed for JavaScript) at https://github.com/NaomixNemo/nFX.
 
 ## Documentation
-Read the documentation [here](https://github.com/EpicOweo/JnFX/blob/0.0.2_ALPHA/index.html).
+Read the documentation [here](https://epicoweo.github.io/webpages/jnfxdocs.html).
 
 ## Changelog
 
